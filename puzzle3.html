@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Greek Mythology Puzzle </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--This is my title-->
+<h1>Greek Mythology Puzzle</h1>
+<!--This is my text-->
+<h2>You're starting to see a pattern- the door in this next room needs a passcode too. But there's a problem. The room is empty. Instead, you see "Poseidon's son" sketched into the stone above... you don't know much about Greek mythology but you assume this must be the way to open the door, so you look up a genealogy.</h2> <a id="geneology" href="https://www.theoi.com/Olympios/PoseidonFamily.html">Click here to view a Greek Geneology!</a>
+ <h2>You were shocked! How could one man have so many children?! This certainly places like any you had studied before... it must be very valuable!</h2>
+<!--THIS IS THE WORD SCRAMBLE-->
+<br>
+<h2 id="scramble">NAME UNSCRAMBLE</h2>
+<p id="drag">Drag and drop the letters into the drop box:</p>
+  
+<!--create a division for the drop box area and style it with CSS, allow to dragover and drop-->  
+<div id="dropBox" ondragover="dragOver(event);" ondrop="drop(event);" >
+</div>
+
+<!--Create separate span elements for each letter in the word unscramble that are draggable-->
+<span id="dragT" draggable="true" ondragstart="dragStart(event);">T</span>
+<span id="dragA" draggable="true" ondragstart="dragStart(event);">A</span>
+<span id="dragAA" draggable="true" ondragstart="dragStart(event);">A</span>
+<span id="dragS" draggable="true" ondragstart="dragStart(event);">S</span>
+<span id="dragL" draggable="true" ondragstart="dragStart(event);">L</span>
+
+
+  <!--Create a button so that they can confirm when they've placed all of their letters, by clicking on the enter button, I want the letters to be displayed in empty paragraph below-->
+  
+<input id="enter" type='button' onclick='return saveAndDisplay()' value='Enter'/> 
+
+<!--empty paragraph-->
+
+<p id="demo"></p>
+  
+  <!--by clicking on this button, it will check if the text matches the password-->
+  
+  <input id="check" type='button' onclick=' return checkAnswer()' value='Check Answer'/> 
+<br>
+<!--this is the submit answer box-->
+<br>
+<!--use the input type password-->
+ <p id="answer">Final Answer:<input id="passwordBox2" type="password"/></p>
+<!--Link out to new page if password is correct-->
+ <a href="https://jordynsmith14.github.io/EscapeRoomDesign/puzzle4.html" onclick="return colorAnswer();">
+  Click here to submit guess and view website
+ </a>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
