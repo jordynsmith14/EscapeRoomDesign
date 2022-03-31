@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background-color:#012340; border: 5px solid; margin: 10px; padding: 20px;
+ font-family: 'Merriweather Sans', sans-serif;
+  text-color:#166B8C;
+  border-color: #F27405;
+}
+p {
+  color: white;
+  font-size:20px;
+}
+h1, h2, h3 {
+ font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color:white;
+  text-shadow: 1px 1px 2px black, 0 0 25px darkorange, 0 0 5px red;
+  font-size: 50px;
+}
+h2 {
+  color: #F27405;
+  padding:50px;
+}
+/*this is my password submission box*/
+a {
+  text-align: center; border: 3px dashed; margin: 10px; padding: 10px;
+  font-size: 20px;
+  border-color: #F27405;
+}
+a {
+font-family: 'Merriweather Sans', sans-serif;
+}
+a:link {
+  color: #166B8C;
+}
+a:visited {
+  color: #166B8C;
+}
+a:hover {
+  color: #F27405;
+}
+#answer {
+  color: #166B8C;
+  font-size: 25px;
+}
+#passwordBox2 {
+  font-size: 25px;
+}
