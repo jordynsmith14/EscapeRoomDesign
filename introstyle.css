@@ -69,7 +69,7 @@ a:hover {
 .center {
   margin: auto;
 }
-
+/*this is my animation*/
 .ocean{
   animation: fontweight 3s alternate-reverse infinite;
 }
